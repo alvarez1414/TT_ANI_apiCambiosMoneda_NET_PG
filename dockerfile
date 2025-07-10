@@ -1,5 +1,5 @@
 
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 ENV ASPNETCORE_URLS=http://+:5235
 
@@ -8,6 +8,7 @@ EXPOSE 5235
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
+
 # Copiar el resto del código
 COPY . .
 RUN dotnet restore
