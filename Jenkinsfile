@@ -6,7 +6,7 @@ pipeline{
         CONTAINER_NAME='dockerapicambiosmodenas_net'
         APP_PORT='5235'
         HOST_PORT='7080' // Cambia si quieres mapear a otro puerto en la maquina
-        DOCKER_NETWORK='dockermodenas_red' // Red compartida con Postgres
+        DOCKER_NETWORK='dockermonedas_red' // Red compartida con Postgres
     }
 
     stages {
